@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to GNAT South Tongu LMS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+        .content {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 0 0 10px 10px;
+        }
+        .button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to GNAT South Tongu LMS!</h1>
+        <p>Your learning journey starts here</p>
+    </div>
+    
+    <div class="content">
+        <h2>Hello {{recipientName}},</h2>
+        
+        <p>Welcome to the GNAT South Tongu Learning Management System! We're excited to have you join our community of learners and educators.</p>
+        
+        <p>Here's what you can do with your new account:</p>
+        
+        <ul>
+            <li>Browse and enroll in courses</li>
+            <li>Access course materials and lessons</li>
+            <li>Submit assignments and take quizzes</li>
+            <li>Participate in discussion forums</li>
+            <li>Track your learning progress</li>
+            <li>Connect with other students and teachers</li>
+        </ul>
+        
+        <p>Ready to start learning? Click the button below to access your dashboard:</p>
+        
+        <div style="text-align: center;">
+            <a href="{{baseUrl}}{{actionUrl}}" class="button">{{actionText}}</a>
+        </div>
+        
+        <p>If you have any questions or need assistance, please don't hesitate to contact our support team.</p>
+        
+        <p>Happy learning!</p>
+        
+        <p>Best regards,<br>
+        The GNAT South Tongu LMS Team</p>
+    </div>
+    
+    <div class="footer">
+        <p>This email was sent to you because you registered for GNAT South Tongu LMS.</p>
+        <p>If you didn't create this account, please ignore this email.</p>
+    </div>
+</body>
+</html>

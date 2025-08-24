@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrollment Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+        .content {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 0 0 10px 10px;
+        }
+        .course-info {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Course Enrollment Confirmed!</h1>
+        <p>You're now enrolled in {{courseTitle}}</p>
+    </div>
+    
+    <div class="content">
+        <h2>Hello {{recipientName}},</h2>
+        
+        <p>Great news! Your enrollment in <strong>{{courseTitle}}</strong> has been confirmed. You now have access to all course materials and can start learning immediately.</p>
+        
+        <div class="course-info">
+            <h3>Course Details:</h3>
+            <p><strong>Course:</strong> {{courseTitle}}</p>
+            <p><strong>Instructor:</strong> {{instructorName}}</p>
+            <p><strong>Duration:</strong> {{courseDuration}}</p>
+        </div>
+        
+        <p>Here's what you can do next:</p>
+        
+        <ul>
+            <li>Access course materials and lessons</li>
+            <li>Complete assignments and quizzes</li>
+            <li>Participate in course discussions</li>
+            <li>Track your learning progress</li>
+            <li>Connect with your instructor and fellow students</li>
+        </ul>
+        
+        <p>Ready to start learning? Click the button below to access your course:</p>
+        
+        <div style="text-align: center;">
+            <a href="{{baseUrl}}{{actionUrl}}" class="button">{{actionText}}</a>
+        </div>
+        
+        <p>If you have any questions about the course or need technical support, please don't hesitate to reach out to your instructor or our support team.</p>
+        
+        <p>Happy learning!</p>
+        
+        <p>Best regards,<br>
+        The GNAT South Tongu LMS Team</p>
+    </div>
+    
+    <div class="footer">
+        <p>This email confirms your enrollment in {{courseTitle}}.</p>
+        <p>If you have any questions, please contact our support team.</p>
+    </div>
+</body>
+</html>
