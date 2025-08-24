@@ -3,7 +3,7 @@ services:
   - type: web
     name: gnat-lms-backend
     env: node
-    plan: free
+    plan: starter   # <-- changed from free to starter
     buildCommand: cd server && npm install
     startCommand: cd server && npm start
     envVars:
@@ -37,7 +37,7 @@ services:
   - type: web
     name: gnatlms
     env: static
-    plan: free
+    plan: starter   # <-- changed from free to starter
     buildCommand: cd client && npm install && npm run build
     staticPublishPath: ./client/build
     envVars:
