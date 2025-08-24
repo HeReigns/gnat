@@ -1,0 +1,19 @@
+{
+  "name": "gnat-south-tongu-lms",
+  "version": "1.0.0",
+  "description": "Learning Management System for GNAT South Tongu",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["lms", "education", "gnat", "south-tongu"],
+  "author": "GNAT South Tongu",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
